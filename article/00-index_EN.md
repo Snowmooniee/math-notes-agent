@@ -68,4 +68,4 @@ So let's start with that loop.
 
 ---
 
-Author: [He Yufeng](https://github.com/he-yufeng). I wrote an earlier piece, a [Claude Code source code analysis](https://zhuanlan.zhihu.com/p/1898797658343862272), which leans toward a full teardown; this series takes a different angle, more about getting you to rebuild it by hand.
+Author: [He Yufeng](https://github.com/he-yufeng). I wrote an earlier piece, a [Claude Code source code analysis](claude-code-source-analysis.md) (in Chinese), which leans toward a full teardown; this series takes a different angle, more about getting you to rebuild it by hand.

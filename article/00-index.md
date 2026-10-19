@@ -68,4 +68,4 @@ corecoder
 
 ---
 
-作者：[何宇峰](https://github.com/he-yufeng)。早前写过一篇 [Claude Code 源码分析](https://zhuanlan.zhihu.com/p/1898797658343862272)，偏完整拆解；这个系列换了个角度，更想让你动手把它复刻出来。
+作者：[何宇峰](https://github.com/he-yufeng)。早前写过一篇 [Claude Code 源码分析](claude-code-source-analysis.md)，偏完整拆解；这个系列换了个角度，更想让你动手把它复刻出来。

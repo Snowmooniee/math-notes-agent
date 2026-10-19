@@ -284,6 +284,6 @@ Before you send anything, run `pytest tests/ -q` (227 tests), `ruff check`, and 
 
 ---
 
-By [Yufeng He](https://github.com/he-yufeng), formerly at Moonshot AI (Kimi). I earlier wrote a fairly complete [Claude Code source analysis](https://zhuanlan.zhihu.com/p/1898797658343862272) on Zhihu; this project is its hands-on counterpart: that one walks you through reading it, this one through rebuilding it.
+By [Yufeng He](https://github.com/he-yufeng), formerly at Moonshot AI (Kimi). I earlier wrote a fairly complete [Claude Code source analysis](article/claude-code-source-analysis.md) (written in Chinese); this project is its hands-on counterpart: that one walks you through reading it, this one through rebuilding it.
 
 > CoreCoder was formerly named NanoCoder; it was renamed to avoid confusion with [Nano-Collective/nanocoder](https://github.com/Nano-Collective/nanocoder), and old links redirect here automatically.
