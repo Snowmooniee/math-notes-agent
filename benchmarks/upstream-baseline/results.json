@@ -1,0 +1,59 @@
+{
+  "upstream": {
+    "repository": "https://github.com/he-yufeng/CoreCoder",
+    "commit": "bd64cfe7ad2789fa0ab1b3a689ad160567b5cdb0",
+    "source_tests_config_license_unchanged": true
+  },
+  "environment": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26200-SP0",
+    "shell": "Git Bash"
+  },
+  "upstream_tests": {
+    "recorded_on": "2026-10-26",
+    "passed": 227,
+    "skipped": 1,
+    "reported_elapsed_seconds": 19.56,
+    "live_model_test_executed": false,
+    "log": "pytest.log",
+    "log_sha256": "358087944478e78635643eaa7cc89cd2c1be996e5ca8214fa567b3543558524a",
+    "dependency_snapshot": "requirements.txt",
+    "dependency_snapshot_sha256": "ed523280f8f616f3c152de7fefdd5daaf066ed0afa7a20dd4c44a24cdfc618f3",
+    "original_log_sha256": "528b6b196bea0bc9f0141dd978074c69dafd79858874f660272fbec3dd060ff3",
+    "original_dependency_snapshot_sha256": "f106894dd481d2b938c41f07c76b2dea438193099dbacc8fe136be06a88a1e90",
+    "text_format": "Repository text uses LF line endings; original run-file hashes are recorded separately."
+  },
+  "scripted_tool_check": {
+    "recorded_on": "2026-10-29",
+    "response_source": "ScriptedLLM",
+    "checks_passed": true,
+    "cases": [
+      {
+        "case": "text_only",
+        "scripted": true,
+        "tool_calls": 0,
+        "validation_exit_code": 1,
+        "validated_success": false,
+        "tool_chain_ok": false
+      },
+      {
+        "case": "tool_repair",
+        "scripted": true,
+        "tool_calls": 3,
+        "validation_exit_code": 0,
+        "validated_success": true,
+        "tool_chain_ok": true
+      }
+    ],
+    "path_case": "directory name containing spaces and a single quote",
+    "api_calls": 0,
+    "model_tokens": null,
+    "script_sha256": "cf3623378dd3b355e29c76b308e5c6432fd45bc2a466a4ea85bab3bdaa0d38c2",
+    "restricted_environment_attempt": {
+      "checks_passed": false,
+      "reason": "Git Bash could not create its Windows process objects; exit code 3221225794",
+      "edited_fixture_external_check_passed": true
+    },
+    "scope": "Deterministic tool and validation check; not model decision quality or a task success-rate benchmark."
+  }
+}

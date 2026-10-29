@@ -1,3 +1,5 @@
+> **Math notes assistant — starting from CoreCoder.** The first step is a [local upstream baseline](docs/upstream-baseline.md), before adding tools for course notes and matrix checks. The README below describes the original CoreCoder engine.
+
 <div align="center">
 
 # CoreCoder
