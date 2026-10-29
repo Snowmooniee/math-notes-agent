@@ -1,4 +1,14 @@
-> **Math notes assistant — starting from CoreCoder.** The first step is a [local upstream baseline](docs/upstream-baseline.md), before adding tools for course notes and matrix checks. The README below describes the original CoreCoder engine.
+# Math Notes Agent
+
+A math study assistant in development for reviewing course notes and checking mathematical reasoning and calculations.
+
+Built on [CoreCoder](https://github.com/he-yufeng/CoreCoder) by [he-yufeng](https://github.com/he-yufeng). The original Git history and [MIT license](LICENSE) are retained.
+
+The [local upstream baseline](docs/upstream-baseline.md) has been recorded. The next step is to support importing notes and reviewing their mathematical content, starting with a small set of linear algebra notes. Reviews should include supporting references, verification steps, and any remaining uncertainty.
+
+---
+
+The original CoreCoder README follows below.
 
 <div align="center">
 
