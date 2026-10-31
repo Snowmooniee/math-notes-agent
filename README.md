@@ -4,7 +4,7 @@ A math study assistant in development for reviewing course notes and checking ma
 
 Built on [CoreCoder](https://github.com/he-yufeng/CoreCoder) by [he-yufeng](https://github.com/he-yufeng). The original Git history and [MIT license](LICENSE) are retained.
 
-The [local upstream baseline](docs/upstream-baseline.md) has been recorded. The next step is to support importing notes and reviewing their mathematical content, starting with a small set of linear algebra notes. Reviews should include supporting references, verification steps, and any remaining uncertainty.
+The local CLI can now import text-based PDF notes, search their text, and recover the exact source PDF for review. See [setup and usage](docs/math-notes.md) and the [upstream baseline](docs/upstream-baseline.md). Mathematical checking and model-assisted review are the next steps, starting with linear algebra notes.
 
 ---
 

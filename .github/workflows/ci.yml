@@ -31,13 +31,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install -U pip
-          python -m pip install -e ".[dev]"
+          python -m pip install -e ".[dev,notes]"
 
       - name: Run tests
         run: python -m pytest tests/ -v
 
       - name: Compile
-        run: python -m compileall -q corecoder tests
+        run: python -m compileall -q corecoder math_notes tests
 
   package:
     runs-on: ubuntu-latest
@@ -67,4 +67,4 @@ jobs:
         run: python -m pip install -U pip ruff
 
       - name: Ruff check
-        run: ruff check corecoder tests
+        run: ruff check corecoder math_notes tests
