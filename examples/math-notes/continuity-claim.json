@@ -1,0 +1,11 @@
+{
+  "domain": {
+    "points": ["a", "b"],
+    "opens": [[], ["a"], ["b"], ["a", "b"]]
+  },
+  "codomain": {
+    "points": ["a", "b"],
+    "opens": [[], ["a", "b"]]
+  },
+  "mapping": [["a", "a"], ["b", "b"]]
+}

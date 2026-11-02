@@ -1,3 +1,15 @@
+# Math Notes Agent
+
+一个开发中的点集拓扑学习助手，用于查阅课程笔记、检查有限拓扑空间和映射。
+
+基于 [he-yufeng](https://github.com/he-yufeng) 的 [CoreCoder](https://github.com/he-yufeng/CoreCoder)，保留原始 Git 历史和 [MIT 许可证](LICENSE)。
+
+当前支持 PDF 导入、关键词检索、原页回查，以及带具体见证的拓扑公理和连续性检查。见[安装与用法](docs/topology-notes.md)、[审查评价方案](docs/review-evaluation.md)和[原版基线](docs/upstream-baseline.md)。真实模型驱动的笔记审查是下一步。
+
+---
+
+以下为 CoreCoder 原版 README。
+
 <div align="center">
 
 # CoreCoder

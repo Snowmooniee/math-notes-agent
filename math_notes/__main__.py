@@ -4,14 +4,17 @@ import argparse
 import json
 import sqlite3
 import sys
+from pathlib import Path
 
 from pypdf.errors import PyPdfError
 
 from . import export_pdf, get_page, import_pdf, search_notes
+from .algebra import check_nullspace
+from .topology import check_continuity, check_topology
 
 
 def main(argv=None) -> int:
-    parser = argparse.ArgumentParser(description="Import PDF notes and look up their source pages.")
+    parser = argparse.ArgumentParser(description="Import PDF notes, look up sources and check mathematical examples.")
     parser.add_argument("--db", default=".math-notes/notes.sqlite3", help="Local Math Notes database path")
     commands = parser.add_subparsers(dest="command", required=True)
     ingest = commands.add_parser("import", help="Import a text-based PDF")
@@ -26,6 +29,9 @@ def main(argv=None) -> int:
     export = commands.add_parser("export", help="Recover the original PDF for visual review")
     export.add_argument("document", help="Full document SHA-256")
     export.add_argument("output", help="New output file; existing files are never overwritten")
+    checks = {"check-nullspace": check_nullspace, "check-topology": check_topology, "check-continuity": check_continuity}
+    for command, check in checks.items():
+        commands.add_parser(command, help=check.__doc__).add_argument("claim", help="JSON input file")
     args = parser.parse_args(argv)
     try:
         if args.command == "import":
@@ -42,9 +48,12 @@ def main(argv=None) -> int:
             }
         elif args.command == "page":
             result = get_page(args.db, args.document, args.pdf_page)
-        else:
+        elif args.command == "export":
             result = export_pdf(args.db, args.document, args.output)
-    except (ValueError, OSError, sqlite3.Error, PyPdfError) as error:
+        else:
+            claim = json.loads(Path(args.claim).read_text(encoding="utf-8"))
+            result = checks[args.command](**claim)
+    except (KeyError, TypeError, ValueError, OSError, sqlite3.Error, PyPdfError) as error:
         print(json.dumps({"error": str(error)}), file=sys.stderr)
         return 1
     print(json.dumps(result, indent=2))

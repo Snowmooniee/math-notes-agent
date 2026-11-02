@@ -1,10 +1,10 @@
 # Math Notes Agent
 
-A math study assistant in development for reviewing course notes and checking mathematical reasoning and calculations.
+A point-set topology study assistant in development for reviewing course notes and checking finite spaces and maps.
 
 Built on [CoreCoder](https://github.com/he-yufeng/CoreCoder) by [he-yufeng](https://github.com/he-yufeng). The original Git history and [MIT license](LICENSE) are retained.
 
-The local CLI can now import text-based PDF notes, search their text, and recover the exact source PDF for review. See [setup and usage](docs/math-notes.md) and the [upstream baseline](docs/upstream-baseline.md). Mathematical checking and model-assisted review are the next steps, starting with linear algebra notes.
+The local CLI imports text-based PDF notes, searches their text, and recovers the source PDF. It checks finite topologies and map continuity, returning concrete witnesses when a condition fails. See [setup and usage](docs/topology-notes.md), the [review evaluation plan](docs/review-evaluation.md), and the [upstream baseline](docs/upstream-baseline.md). Connecting source lookup and these tools to a model-driven review is the next step.
 
 ---
 
